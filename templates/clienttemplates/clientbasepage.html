@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-AU" data-whatinput="mouse" data-whatintent="mouse">
+<head>
+  <title>MCFCN</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://use.fontawesome.com/45a5a1da21.js"></script>
+  <link
+  rel="stylesheet"
+  id="easy_load_more-frontend-css"
+  href="{% static 'clientstatic/homepage/css/frontend.css' %}"
+  type="text/css"
+  media="all"
+  />
+  <link
+  rel="stylesheet"
+  id="dpsp-frontend-style-css"
+  href="{% static 'clientstatic/homepage/css/style-frontend.css' %}"
+  type="text/css"
+  media="all"
+  />
+  <link
+  rel="stylesheet"
+  id="main-stylesheet-css"
+  href="{% static 'clientstatic/homepage/css/app.css' %}"
+  type="text/css"
+  media="all"
+  />
+  <link
+  rel="stylesheet"
+  id="wpmtst-custom-style-css"
+  href="{% static 'clientstatic/homepage/css/custom.css' %}"
+  type="text/css"
+  media="all"
+  />
+  <!-- reponsive -->
+  <script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?ver=3.2.1"
+  ></script>
+</head>
+<body
+style="background-color: #98c5e9"
+class="page-template page-template-page-templates page-template-company page-template-page-templatescompany-php page page-id-53 offcanvas"
+data-gr-c-s-loaded="true"
+>
+<div class="off-canvas-wrapper">
+  <div
+  class="off-canvas position-left is-transition-push is-closed"
+  id="offCanvas"
+  data-off-canvas=""
+  aria-hidden="true"
+  data-e="kqk5b8-e"
+  >
+  <div class="mobile-main-menu">
+    <ul
+    id="menu-main-menu"
+    class="vertical menu"
+    data-accordion-menu=""
+    data-submenu-toggle="true"
+    role="tree"
+    aria-multiselectable="true"
+    data-e="l5xezs-e"
+    >
+    <li
+    id="menu-item-55"
+    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-53 current_page_item menu-item-55 is-active"
+    role="treeitem"
+    aria-hidden="false"
+    >
+    <a href="{% url 'mcfcapp:clienthome' %}">Home</a>
+  </li>
+  <li
+  id="menu-item-119"
+  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"
+  role="treeitem"
+  >
+  <a href="{% url 'mcfcapp:clientmember' %}">Members</a>
+</li>
+<li
+id="menu-item-182"
+class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"
+role="treeitem"
+>
+<a href="#">Events</a>
+</li>
+<li
+id="menu-item-1005"
+class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1005"
+role="treeitem"
+>
+<a href="#">WallPaper Gallery</a>
+</li>
+<li
+id="menu-item-682"
+class="login menu-item menu-item-type-custom menu-item-object-custom menu-item-682"
+role="treeitem"
+>
+<a href="#" data-open="login-modal">Merchandise Comparison</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="js-off-canvas-overlay is-overlay-fixed"></div>
+
+<div class="off-canvas-content" data-off-canvas-content="">
+  <header class="site-header" role="banner">
+    <div id="main-header" class="grid-container">
+      <button
+      class="hamburger hamburger--spin"
+      type="button"
+      data-toggle="offCanvas"
+      aria-expanded="false"
+      aria-controls="offCanvas"
+      >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <a id="logo-link" href="#" rel="Home">
+      <img id="logo" src="{% static 'clientstatic/homepage/image/logo.png' %}" alt="Place your logo" />
+    </a>
+
+    <a id="mobile-call" href="tel:+9779882828282"
+    ><i class="fa fa-phone" aria-hidden="true"></i
+      ></a>
+
+      <nav>
+        <!--  -->
+        <div class="menu-main-menu-container">
+          <ul id="menu-main-menu-1" class="menu">
+            <li
+            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-53 current_page_item menu-item-55 is-active"
+            >
+            <a href="{% url 'mcfcapp:clienthome' %}">Home</a>
+          </li>
+          <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"
+          >
+          <a href="{% url 'mcfcapp:clientmember' %}">Members</a>
+        </li>
+        <li
+        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"
+        >
+        <a href="{% url 'mcfcapp:clientevent' %}">Events</a>
+      </li>
+      <li
+      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1005"
+      >
+      <a href="{% url 'mcfcapp:clientgallery' %}">WallPaper Gallery</a>
+    </li>
+    <li
+    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"
+    >
+    <a href="#">Merchandise Comparison</a>
+  </li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+{% block content %}
+
+
+{% endblock %}
+
+<div class="footer-container" data-sticky-footer="">
+  <footer class="footer grid-x">
+    <a id="back-top" href="#"
+    ><i class="fa fa-angle-up" aria-hidden="true"></i
+      ></a>
+      <div class="medium-6 cell grid-x footer-menu grid-padding-x">
+        <div class="medium-6 cell">
+
+        </div>
+      </div>
+      <div class="medium-6 cell" style="color: white;">   <br /></div>
+    </footer>
+    <div class="copyright-holder">
+      <div class="grid-container">
+        © Copyright MCSCN 2019
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+
+  <!-- Signup Modal -->
+
+  <script
+  type="text/javascript"
+  src="https://websitetravel.com/wp-content/plugins/easy-load-more/assets/js/frontend.min.js?ver=1.0.0"
+  ></script>
+  <script
+  type="text/javascript"
+  src="https://websitetravel.com/wp-content/themes/websitetravel/dist/assets/js/app.js?ver=2.10.3"
+  ></script>
+  <script
+  type="text/javascript"
+  src="https://websitetravel.com/wp-includes/js/wp-embed.min.js?ver=4.9.9"
+  ></script>
+  <script type="text/javascript">
+    var elm_button_vars = { wrapper: "#news-post-holder" };
+  </script>
+</div>
+<!-- Closing off-canvas-content tag-->
+</div>
+<div class="reveal-overlay">
+  <div
+  class="reveal center"
+  id="login-modal"
+  data-reveal=""
+  role="dialog"
+  aria-hidden="true"
+  data-yeti-box="login-modal"
+  data-resize="login-modal"
+  data-e="7foepl-e"
+  data-events="resize"
+  style="top: 133px;"
+  >
+  <h3 class="large">Choose Login Area</h3>
+  <div class="grid-x grid-margin-x">
+    <div class="light-grey small-12 medium-6 cell login-box">
+      <img
+      src="https://websitetravel.com/wp-content/themes/websitetravel/dist/assets/images/products/tdms.svg"
+      />
+      <h4>Agent</h4>
+      <a
+      class="button"
+      href="https://tdms.websitetravel.com/"
+      target="_blank"
+      title="Login to TDMS"
+      >Login</a
+      >
+    </div>
+    <div class="blue-grey small-12 medium-6 cell login-box">
+      <img
+      src="https://websitetravel.com/wp-content/themes/websitetravel/dist/assets/images/products/cms.svg"
+      />
+      <h4>Operator / Supplier</h4>
+      <a
+      class="button"
+      href="https://cms.websitetravel.com/"
+      target="_blank"
+      title="Login to CMS"
+      >Login</a
+      >
+    </div>
+  </div>
+
+  <button
+  class="close-button"
+  data-close=""
+  aria-label="Close modal"
+  type="button"
+  >
+  <i class="fa fa-times-circle" aria-hidden="true"></i>
+</button>
+</div>
+</div>
+<div class="reveal-overlay">
+  <div
+  class="reveal center"
+  id="signup-modal"
+  data-reveal=""
+  role="dialog"
+  aria-hidden="true"
+  data-yeti-box="signup-modal"
+  data-resize="signup-modal"
+  data-e="zdvcbp-e"
+  data-events="resize"
+  style="top: 133px;"
+  >
+  <h3 class="large">Sign Up</h3>
+  <div class="grid-x grid-margin-x">
+    <div class="light-grey small-12 medium-6 cell login-box">
+      <img
+      src="https://websitetravel.com/wp-content/themes/websitetravel/dist/assets/images/agents.svg"
+      />
+      <h4>Agent</h4>
+      <a class="button" href="#" title="Login to TDMS"></a>
+    </div>
+    <div class="blue-grey small-12 medium-6 cell login-box">
+      <img
+      src="https://websitetravel.com/wp-content/themes/websitetravel/dist/assets/images/suppliers.svg"
+      />
+      <h4>Operator / Supplier</h4>
+      <a class="button" href="#" title="Login to CMS"></a>
+    </div>
+  </div>
+
+  <button
+  class="close-button"
+  data-close=""
+  aria-label="Close modal"
+  type="button"
+  >
+  <i class="fa fa-times-circle" aria-hidden="true"></i>
+</button>
+</div>
+</div>
+<!-- Closing Off canvas wrapper tag -->
+</body>
+</html>
